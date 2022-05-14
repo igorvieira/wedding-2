@@ -17,7 +17,7 @@ import ImageContent023 from './images/023 Bruna & Igor 28042022.jpg'
 
 const mock =  [
   {
-    src: ImageContent003,
+    src: "https://github.com/igorvieira/wedding-2/blob/main/public/images/003%20Bruna%20&%20Igor%2028042022.jpg?raw=true",
     alt: 'galery',
     width: '200',
     height: '200'
