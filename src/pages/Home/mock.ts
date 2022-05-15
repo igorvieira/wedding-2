@@ -1,106 +1,55 @@
-import ImageContent003 from './images/003 Bruna & Igor 28042022.jpg'
-import ImageContent004 from './images/004 Bruna & Igor 28042022.jpg'
-import ImageContent005 from './images/005 Bruna & Igor 28042022.jpg'
-import ImageContent006 from './images/006 Bruna & Igor 28042022.jpg'
-import ImageContent007 from './images/007 Bruna & Igor 28042022.jpg'
-import ImageContent008 from './images/008 Bruna & Igor 28042022.jpg'
-import ImageContent010 from './images/010 Bruna & Igor 28042022.jpg'
-import ImageContent013 from './images/013 Bruna & Igor 28042022.jpg'
-import ImageContent015 from './images/015 Bruna & Igor 28042022.jpg'
-import ImageContent016 from './images/016 Bruna & Igor 28042022.jpg'
-import ImageContent017 from './images/017 Bruna & Igor 28042022.jpg'
-import ImageContent018 from './images/018 Bruna & Igor 28042022.jpg'
-import ImageContent022 from './images/022 Bruna & Igor 28042022.jpg'
-import ImageContent023 from './images/023 Bruna & Igor 28042022.jpg'
-
-
-
 const mock =  [
   {
-    src: "https://github.com/igorvieira/wedding-2/blob/main/public/images/003%20Bruna%20&%20Igor%2028042022.jpg?raw=true",
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '003_Bruna_Igor_28042022_tukkfa.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent004,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '004_Bruna_Igor_28042022_lk9ri6.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent005,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '006_Bruna_Igor_28042022_xnwqtq.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent006,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '007_Bruna_Igor_28042022_eyjtta.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent007,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '008_Bruna_Igor_28042022_zncmvo.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent008,
-    alt: 'galery',
-    width: '200',
-    height: '200'
-  },
-
-  {
-    src: ImageContent010,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '010_Bruna_Igor_28042022_quojdd.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent013,
-    alt: 'galery',
-    width: '200',
-    height: '200'
-  },
-
-  {
-    src: ImageContent015,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '013_Bruna_Igor_28042022_sptg59.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent016,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '015_Bruna_Igor_28042022_lk7fpg.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent017,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '016_Bruna_Igor_28042022_vvhzqc.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent018,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '017_Bruna_Igor_28042022_euhafu.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent022,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '018_Bruna_Igor_28042022_z2dlxn.jpg',
+    alt: 'galery'
   },
   {
-    src: ImageContent023,
-    alt: 'galery',
-    width: '200',
-    height: '200'
+    src: '022_Bruna_Igor_28042022_zgknop.jpg',
+    alt: 'galery'
+  },
+  {
+    src: '023_Bruna_Igor_28042022_kh0rkx.jpg',
+    alt: 'galery'
   }
 ]
 
