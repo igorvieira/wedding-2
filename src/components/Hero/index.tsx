@@ -15,7 +15,7 @@ const Hero = () => {
         />
       </S.LeftImage>
       <S.Content>
-        Bruna & Igor
+        <S.Title>Bruna & Igor</S.Title>
         <hr/>
         20 - 08 - 2022
       </S.Content>

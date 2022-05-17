@@ -7,8 +7,8 @@ export const ContainerCounterDown = styled.div`
   justify-content: center;
   height: 150px;
   align-items: center;
-  background: #6e4a82;
-  color: #fff;
+  background: transparent;
+  color: #black;
   margin-top: 100px;
   margin-bottom: 100px;
 `
