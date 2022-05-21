@@ -4,13 +4,16 @@ import styled from "styled-components";
 export const ContainerCounterDown = styled.div`
   display: flex;
   justify-content: center;
-  justify-content: center;
-  height: 150px;
+  height: 100px;
   align-items: center;
   background: transparent;
   color: #black;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  z-index: 2;
+  border: 1px solid #fff;
+  color: #fff;
 `
 
 export const ItemCounter = styled.div`
