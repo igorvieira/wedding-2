@@ -1,5 +1,6 @@
 
 import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const HomeContent = styled.div`
   display: flex;
@@ -19,11 +20,10 @@ export const WavesUp = styled.svg`
   min-height: 250px;
   max-height: 350px;
 
-  @media (max-width: 768px) {
-    .waves {
-      height: 40px;
-      min-height: 40px;
-    }
+    ${media.lessThan('medium')`
+      min-height: 50px;
+      max-height: 150px;
+    `}
   }
 `
 
@@ -37,12 +37,10 @@ export const WavesLow = styled.svg`
   min-height: 250px;
   max-height: 350px;
 
-  @media (max-width: 768px) {
-    .waves {
-      height: 40px;
-      min-height: 40px;
-    }
-  }
+  ${media.lessThan('medium')`
+    min-height: 50px;
+    max-height: 150px;
+  `}
 `
 
 export const Parallax = styled.g`

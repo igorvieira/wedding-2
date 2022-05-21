@@ -6,27 +6,19 @@ const Hero = () => {
 
   return (
     <S.HeroWrapper>
-      <S.LeftImage>
-        <img
-          src={LeftImage}
-          alt="leftImage"
-          width={300}
-          height={400}
-        />
-      </S.LeftImage>
+      <S.LeftImage
+        src={LeftImage}
+        alt="leftImage"
+      />
       <S.Content>
         <S.Title>Bruna & Igor</S.Title>
         <hr/>
         20 - 08 - 2022
       </S.Content>
-      <S.RightImage>
-        <img
-          src={RightImage}
-          alt="rightImage"
-          width={300}
-          height={400}
-        />
-      </S.RightImage>
+      <S.RightImage
+        src={RightImage}
+        alt="rightImage"
+      />
     </S.HeroWrapper>
   )
 }
