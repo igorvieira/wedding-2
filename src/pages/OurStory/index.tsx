@@ -3,7 +3,7 @@ import { setConfig, buildUrl } from 'cloudinary-build-url'
 
 import * as S from "./styles"
 
-const OUR_HISTORY = 'https://res.cloudinary.com/dje6m1lab/image/upload/v1653158926/026_Bruna_Igor_28042022_1_r7isnm.jpg'
+const OUR_HISTORY = '026_Bruna_Igor_28042022_1_r7isnm.jpg'
 
 setConfig({
   cloudName: 'dje6m1lab'

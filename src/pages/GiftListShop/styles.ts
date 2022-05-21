@@ -9,7 +9,6 @@ export const ShoppingGift = styled.span`
 export const ShoppingImage = styled.img`
   width: 200px;
   height: 200px;
-  margin-right: 25px;
   margin-bottom: 25px;
 
   ${media.lessThan('medium')`
@@ -17,8 +16,8 @@ export const ShoppingImage = styled.img`
   `}
 
   ${media.lessThan('small')`
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   `}
 `
 export const ShoppingContent = styled.div`
@@ -31,3 +30,23 @@ export const ShoppingContent = styled.div`
   `}
 `
 
+export const Title = styled.div`
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 34px;
+  letter-spacing: 4px;
+`
+
+export const ImageCover = styled.img`
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+  ${media.lessThan("medium")`
+    height: 250px;
+    width: 100%;
+  `}
+
+`
+
+export const Description = styled.div``

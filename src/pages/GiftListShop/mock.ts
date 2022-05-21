@@ -1,34 +1,28 @@
-import MagaLu from './magalu.png'
-import CasasBahia from './casas_bahia.jpeg'
-import Extra from './extra.png'
-import Comicado from './comicado.png'
-import FastShop from './fast-shop.jpeg'
-
 const mock = [
   {
     url: 'https://www.querodecasamento.com.br/lista-de-casamento/brunaigor2022',
     altName: 'Magazine Luiza',
-    src: MagaLu
+    src: 'magalu_qogn4r.png'
   },
   {
     url: 'https://listas.casasbahia.com.br/brunaigor2022',
     altName: 'Casas Bahia',
-    src: CasasBahia
+    src: 'casas_bahia_ghdjci.jpg'
   },
   {
     url: 'https://listas.extra.com.br/igorebruna2022',
     altName: 'Extra',
-    src: Extra
+    src: 'extra_uvrqpy.png'
   },
   {
     url: 'https://lista.camicado.com.br/brunaigorvieira2022',
     altName: 'Comicado',
-    src: Comicado
+    src: 'comicado_oa8zwo.png'
   },
   {
     url: 'https://listadecasamento.fastshop.com.br/lista/brunaigorvieira2022',
     altName: 'FastShop',
-    src: FastShop
+    src: 'fast-shop_c4ukrg.jpg'
   },
 ]
 
