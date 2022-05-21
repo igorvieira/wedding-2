@@ -11,14 +11,10 @@ const GiftListShop = () => {
           mock.map((item, index) =>
             <a key={index} href={item.url} >
               <S.ShoppingGift >
-                <S.ShoppingImage>
-                  <img
-                    src={item.src}
-                    alt={item.altName}
-                    width={200}
-                    height={200}
-                  />
-                </S.ShoppingImage>
+                <S.ShoppingImage
+                  src={item.src}
+                  alt={item.altName}
+                />
               </S.ShoppingGift>
             </a>
           )
