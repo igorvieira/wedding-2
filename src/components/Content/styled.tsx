@@ -5,7 +5,8 @@ export const Content = styled.section`
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 250px;
-  min-height: 100vh;
+  min-height: 50vh;
+
 
   ${media.lessThan('medium')`
     margin-left: 50px;
