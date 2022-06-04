@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
-
+import {  ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import * as S from './styles'
 
 export const FormEmail = () => {
@@ -8,15 +9,32 @@ export const FormEmail = () => {
     e.preventDefault();
 
     emailjs.sendForm('mailjet', 'template_pqswadr', e.currentTarget, 'user_ZgxCl0YeWXrpgbaVfdJlf')
-      .then((result: any) => {
-          console.log(result.text);
+      .then(() => {
+        toast.success('Enviado com sucesso! 😄', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       }, (error: any) => {
-          console.log(error.text);
+        toast.error('Desculpa, ouv alguma coisa errada! 😔', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          });
       });
   };
 
   return (
      <S.ContentForm>
+       <ToastContainer />
       <S.Form>
         <form  onSubmit={sendEmail} style={{display:'flex', flexDirection: 'column'}}>
           <S.Input type="text" name="user_name" placeholder='Nome'/>
