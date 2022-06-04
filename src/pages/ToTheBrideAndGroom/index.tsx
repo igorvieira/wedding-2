@@ -14,12 +14,11 @@ export default function ToTheBrideAndGroom() {
       />
 
       <div>
-        <div>
-          {/* <img  src={buildUrl(OUR_HISTORY, {})} alt='hey' /> */}
-        </div>
-        <div>
+        <S.TitleHistory>Mensagem aos Noivos</S.TitleHistory>
+        <hr/>
+        <S.Content>
           <FormEmail />
-        </div>
+        </S.Content>
       </div>
     </Content>
   );

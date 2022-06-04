@@ -13,3 +13,14 @@ object-fit: cover;
   `}
 
 `
+
+export const TitleHistory = styled.div`
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 34px;
+  letter-spacing: 4px;
+`
+
+export const Content = styled.div`
+  margin-top: 50px;
+`

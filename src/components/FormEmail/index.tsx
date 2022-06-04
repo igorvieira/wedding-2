@@ -1,5 +1,7 @@
 import emailjs from '@emailjs/browser';
 
+import * as S from './styles'
+
 export const FormEmail = () => {
 
   const sendEmail = (e: any) => {
@@ -14,14 +16,15 @@ export const FormEmail = () => {
   };
 
   return (
-      <form  onSubmit={sendEmail} style={{display:'flex', flexDirection: 'column'}}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+     <S.ContentForm>
+      <S.Form>
+        <form  onSubmit={sendEmail} style={{display:'flex', flexDirection: 'column'}}>
+          <S.Input type="text" name="user_name" placeholder='Nome'/>
+          <S.Input type="email" name="user_email" placeholder='Email'/>
+          <S.TextArea name="message" placeholder='Mensagem'/>
+          <S.Button type="submit">Enviar</S.Button>
+        </form>
+      </S.Form>
+     </S.ContentForm>
   );
 };
