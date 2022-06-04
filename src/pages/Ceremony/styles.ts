@@ -24,3 +24,9 @@ export const ImageCover = styled.img`
 export const ContentInfo = styled.div`
   display: flex;
 `
+
+export const Description = styled.p`
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+`
