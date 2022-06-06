@@ -19,13 +19,13 @@ const GiftListShop = () => {
         alt="background"
       />
       <S.Description>
-      <S.Title>
-        Convidados queridos, sejam bem vindos a nossa lista de presentes
-      </S.Title>
-      <hr />
-      <p>Preparamos cada lista com carinho e atenção, caso queiram sintam-se à vontade
-      para nos presentear seja com presentes físicos ou escolhendo algum item de nossa
-      lista. Os sites estão abaixo:</p>
+        <S.Title>
+          Convidados queridos, sejam bem vindos a nossa lista de presentes
+        </S.Title>
+        <hr />
+        <p>Preparamos cada lista com carinho e atenção, caso queiram sintam-se à vontade
+        para nos presentear seja com presentes físicos ou escolhendo algum item de nossa
+        lista. Os sites estão abaixo:</p>
       </S.Description>
       <S.ShoppingContent>
         {
