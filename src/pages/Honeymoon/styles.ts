@@ -5,8 +5,15 @@ import media from "styled-media-query";
 export const HoneymoonContent = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  ${media.between("small","medium")`
+    margin-left: 20px;
+    margin-right: 20px;
+`}
 `
 
 export const HoneymoonPixImage = styled.div`

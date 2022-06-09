@@ -107,8 +107,8 @@ export const CloseButton = styled.button<CloseButtonProps>`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     top: 2.4rem;
     right: 1.6rem;
@@ -135,8 +135,8 @@ export const CloseButton = styled.button<CloseButtonProps>`
 `
 
 export const CloseIcon = styled(Cancel)`
-  ${({ theme }) => css`
-    color: #ededed;
+  ${() => css`
+    color: #6e4a82;
     width: 2.4rem;
     height: 2.4rem;
   `}

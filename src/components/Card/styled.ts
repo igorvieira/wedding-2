@@ -4,7 +4,7 @@ import media from "styled-media-query";
 
 export const Content = styled.div`
   width: 250px;
-  height: 300px;
+  min-height: 300px;
   background: #ededed;
   border-radius: 4px;
   box-shadow: 0 20px 30px rgb(0 0 0 / 10%);
@@ -22,6 +22,11 @@ export const Banner = styled.img`
 `
 
 export const Text = styled.div`
+  padding-bottom: 20px;
+  font-weight: 700;
+`
+
+export const Price = styled.div`
   padding-bottom: 40px;
 `
 

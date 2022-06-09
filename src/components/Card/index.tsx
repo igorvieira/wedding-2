@@ -3,11 +3,12 @@ import * as S from './styled'
 export type CardProps = {
   banner: string
   description: string
+  text: string
 }
 
 
 
-const Card = ({ banner, description }: CardProps) => {
+const Card = ({ banner, description, text }: CardProps) => {
   return (
     <S.Content >
       <S.Banner
@@ -19,6 +20,9 @@ const Card = ({ banner, description }: CardProps) => {
         <S.Text>
           {description}
         </S.Text>
+        <S.Price>
+          {text}
+        </S.Price>
         <S.Button>
           Veja Mais...
         </S.Button>

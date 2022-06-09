@@ -2,7 +2,6 @@ import {
   QuestionMarkCircle,
   Copy,
   Check,
-  NavArrowLeft,
 } from 'iconoir-react'
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
@@ -33,31 +32,8 @@ export const Content = styled.main`
   `}
 `
 
-export const BackButton = styled.button`
-  ${() => css`
-    border: none;
-    margin: 0;
-    background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 4rem;
-    height: 4rem;
-    margin-bottom: 3.2rem;
-  `}
-`
-
-export const Back = styled(NavArrowLeft)`
-  ${() => css`
-    width: 2.4rem;
-    height: 2.4rem;
-    color: #ededed;;
-  `}
-`
-
 export const Title = styled.h1`
-  ${({ theme }) => css`
+  ${() => css`
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 3rem;
@@ -67,7 +43,6 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   ${() => css`
-    color: #7B7B7B;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
@@ -218,7 +193,7 @@ export const Divisor = styled.hr`
 
 export const ModalWrapper = styled.article`
   ${() => css`
-    padding: 6rem 1.6rem 0;
+    padding: 3rem 1.6rem 0;
     height: 150vh
 
     ${media.greaterThan('small')`
@@ -226,4 +201,8 @@ export const ModalWrapper = styled.article`
       padding: 3rem 3.2rem 20rem;
     `}
   `}
+`
+
+export const Text = styled.div`
+    font-size: 1.6rem;
 `

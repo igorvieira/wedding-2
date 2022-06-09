@@ -53,6 +53,7 @@ const HoneymoonTemplate = () => {
                 openModal()
               }}>
                 <Card
+                  text={item.text}
                   banner={src}
                   description={item.description}
                 />

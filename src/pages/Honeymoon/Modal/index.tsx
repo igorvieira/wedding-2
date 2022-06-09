@@ -38,24 +38,31 @@ const PaymentModal = ({ isModalOpen, closeModal, description: item }: PaymentMod
       <S.ModalWrapper>
         <S.Title>Tranferência via Pix</S.Title>
         <S.ContentBanner>
-          <img style={{
-            width: '100%',
-            height: 250
-          }}
-          src={item.url}
-          alt={item.alt}
+          <img
+            style={{
+              width: '100%',
+              height: 250
+            }}
+            src={item.url}
+            alt={item.alt}
           />
 
-          <img style={{
-            width: '100%',
-            height: 250
-          }}
-          src={buildUrl(item.banner, {})}
-          alt={item.alt}
+          <img
+            style={{
+              width: '100%',
+              height: 250
+            }}
+            src={buildUrl(item.banner, {})}
+            alt={item.alt}
           />
         </S.ContentBanner>
         <S.Divisor />
         <S.Description>
+          <S.Title>{item.description}</S.Title>
+          <S.Text>
+            {item.text}
+          </S.Text>
+          <S.Divisor />
           <S.PixCode onClick={() => handleCopy(item?.pix)}>
             <S.Pix>{`${item?.pix.slice(0, 30)}...`}</S.Pix>
             {isCopied ? (
