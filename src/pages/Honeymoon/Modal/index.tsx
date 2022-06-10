@@ -5,6 +5,7 @@ import { useState } from 'react'
 import clipboardCopy from 'clipboard-copy'
 import Modal from '../../../components/Modal'
 import * as S from './styled'
+import { toast } from 'react-toastify'
 
 export type DescriptionProps ={
   url: string
@@ -29,6 +30,16 @@ const PaymentModal = ({ isModalOpen, closeModal, description: item }: PaymentMod
     setIsCopied(true)
 
     setTimeout(() => setIsCopied(false), 3000)
+
+    toast.success('Copiado! 😄', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
   }
 
 
@@ -56,13 +67,11 @@ const PaymentModal = ({ isModalOpen, closeModal, description: item }: PaymentMod
             alt={item.alt}
           />
         </S.ContentBanner>
-        <S.Divisor />
         <S.Description>
           <S.Title>{item.description}</S.Title>
           <S.Text>
             {item.text}
           </S.Text>
-          <S.Divisor />
           <S.PixCode onClick={() => handleCopy(item?.pix)}>
             <S.Pix>{`${item?.pix.slice(0, 30)}...`}</S.Pix>
             {isCopied ? (
@@ -77,7 +86,6 @@ const PaymentModal = ({ isModalOpen, closeModal, description: item }: PaymentMod
             )}
           </S.PixCode>
         </S.Description>
-
       </S.ModalWrapper>
     </Modal>
   )

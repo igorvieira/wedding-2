@@ -33,7 +33,7 @@ const GiftListShop = () => {
             const src = buildUrl(item.src, {})
             return (
               <a key={index} href={item.url} >
-                <S.ShoppingGift >
+                <S.ShoppingGift>
                   <S.ShoppingImage
                     src={src}
                     alt={item.altName}

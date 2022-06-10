@@ -34,7 +34,7 @@ export const FormEmail = () => {
 
   return (
      <S.ContentForm>
-       <ToastContainer />
+      <ToastContainer />
       <S.Form>
         <form  onSubmit={sendEmail} style={{display:'flex', flexDirection: 'column'}}>
           <S.Input type="text" name="user_name" placeholder='Nome'/>

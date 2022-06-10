@@ -1,12 +1,18 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 
 export const Container = styled.div`
-  display: flex;
   width: 100%;
   padding: 4% 2%;
   box-sizing: border-box;
-  height: 70vh;
+  min-height: 70vh;
+
+  ${
+    media.greaterThan('small')`
+      display: flex;
+      height: 70vh;
+  `}
 `
 
 export const Box = styled.div`
@@ -18,27 +24,40 @@ export const Box = styled.div`
   line-height: 0;
 
   & > img {
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    transition: .7s;
-    cursor: pointer;
-  }
-
-  & > span {
-    font-size: 3.8vh;
-    display: block;
-    text-align: center;
-    line-height: 2.6;
-  }
-
-  &:hover {
-    flex: 1 1 50%;
-  }
-
-  &:hover > img {
     width: 100%;
-    height: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  ${
+    media.greaterThan('small')`
+      flex-flow: row wrap;
+
+      & > img {
+        width: 200%;
+        height: 100%;
+        transition: .7s;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      & > span {
+        font-size: 3.8vh;
+        display: block;
+        text-align: center;
+        line-height: 2.6;
+      }
+
+      &:hover {
+        flex: 1 1 50%;
+      }
+
+      &:hover > img {
+        width: 100%;
+        height: 100%;
+      }
+    `
   }
 
 `

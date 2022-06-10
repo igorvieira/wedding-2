@@ -50,7 +50,7 @@ const OurHistory = () => {
       </p>
       <p>
         Com amor, <br/>
-        Bruna e Igor.
+        Bruna & Igor.
       </p>
       </div>
     </Content>

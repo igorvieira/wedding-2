@@ -34,7 +34,7 @@ export const Content = styled.main`
 
 export const Title = styled.h1`
   ${() => css`
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 3rem;
     margin-bottom: 0.8rem;
@@ -82,7 +82,7 @@ export const PixCode = styled.p`
     margin-bottom: 1.6rem;
     border-radius: 1.6rem;
     border: 1px dashed rgba(0, 0, 0, 0.23);
-    padding: 1.2rem 1.6rem;
+    padding: 1rem 0.5rem;
     cursor: pointer;
     background: #734484eb;
     color: #fff;
@@ -97,9 +97,11 @@ export const PixCode = styled.p`
 
 export const Pix = styled.span`
   ${() => css`
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 2.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  padding-left: 16px;
+  padding-right: 1rem;
 
     ${media.lessThan('medium')`
       font-size: 12px;
@@ -115,7 +117,7 @@ export const CopyButton = styled.button`
     width: fit-content;
     color: #ededed;;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2.2rem;
     transition: opacity 0.1s ease-in-out;
@@ -136,7 +138,7 @@ export const Copied = styled.span`
     align-items: center;
     width: fit-content;
     color: #ededed;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2.2rem;
 
@@ -204,5 +206,5 @@ export const ModalWrapper = styled.article`
 `
 
 export const Text = styled.div`
-    font-size: 1.6rem;
+    font-size: 1rem;
 `

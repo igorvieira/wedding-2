@@ -102,22 +102,21 @@ type CloseButtonProps = {
 }
 
 export const CloseButton = styled.button<CloseButtonProps>`
-  ${({ notRounded = false }) => css`
+  ${() => css`
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     top: 2.4rem;
     right: 1.6rem;
     border: none;
-    background: ${!notRounded ? '#fff' : 'transparent'};
     cursor: pointer;
     z-index: 40;
+    background: transparent;
     transition: opacity 0.1s ease-in-out;
-    box-shadow: ${!notRounded ? '0 0.5rem 1rem rgba(0, 0, 0, 0.1)' : 'none'};
 
     &:hover {
       opacity: 50%;
@@ -130,6 +129,7 @@ export const CloseButton = styled.button<CloseButtonProps>`
     ${media.greaterThan('small')`
       right: 1.6rem;
       top: 1.6rem;
+      font-size: 1rem;
     `}
   `}
 `

@@ -16,8 +16,8 @@ export const ShoppingImage = styled.img`
   `}
 
   ${media.lessThan('small')`
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
   `}
 `
 export const ShoppingContent = styled.div`
