@@ -11,11 +11,9 @@ export const Wrapper = styled.div`
 `
 
 export const ContentBanner = styled.div`
-  display: flex;
+  position: relative
 
-  ${media.lessThan('medium')`
-    flex-flow: row wrap;
-  `}
+
 `
 
 export const Content = styled.main`
@@ -210,8 +208,12 @@ export const Text = styled.div`
 `
 
 export const ImageQRCode = styled.img`
-  width: 100%;
-  height: 250px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
 export const ImageBanner = styled.img`
   width: 100%;

@@ -23,6 +23,9 @@ export const ImageCover = styled.img`
 
 export const ContentInfo = styled.div`
   display: flex;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
 `
 
 export const Description = styled.p`
