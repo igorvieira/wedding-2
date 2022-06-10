@@ -34,7 +34,13 @@ const HoneymoonTemplate = () => {
   return <div>
     <Content>
       <S.ImageCover
-        src={buildUrl(OUR_HISTORY, {})}
+        src={buildUrl(OUR_HISTORY, {
+          transformations: {
+            resize: {
+              width: '1080',
+              type: 'scale'
+            }
+          }})}
         alt="background"
       />
       <S.Title>Cotas</S.Title>
@@ -46,8 +52,21 @@ const HoneymoonTemplate = () => {
 
         {
           mock?.map((item, index) => {
-            const banner = buildUrl(item.banner, {})
-            const qrcode = buildUrl(item.url, {})
+            const banner = buildUrl(item.banner, {
+              transformations: {
+                resize: {
+                  width: '250',
+                  height: '250',
+                }
+              }})
+
+            const qrcode = buildUrl(item.url, {
+              transformations: {
+                resize: {
+                  width: '150',
+                  height: '150',
+                }
+            }})
             return (
               <S.CardItem key={index} onClick={() => {
                 setDescription(item)

@@ -21,7 +21,13 @@ const Gallery = ({images}: GalleryProps) => {
     <S.Container>
       {
         images?.map((item, index) => {
-          const src = buildUrl(item.src, {})
+          const src = buildUrl(item.src, {
+            transformations: {
+              resize: {
+                width: 1080,
+                type: 'scale',
+              }
+            }})
 
           return (<S.Box key={index}>
             <img src={src} alt={item.alt} />

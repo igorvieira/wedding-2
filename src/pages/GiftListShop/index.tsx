@@ -15,7 +15,13 @@ const GiftListShop = () => {
   return <div>
     <Content>
       <S.ImageCover
-        src={buildUrl(OUR_HISTORY, {})}
+        src={buildUrl(OUR_HISTORY, {
+          transformations: {
+            resize: {
+              width: '1080',
+              type: 'scale'
+            }
+          }})}
         alt="background"
       />
       <S.Description>

@@ -77,3 +77,46 @@ export const Parallax = styled.g`
     }
   }
 `
+export const LoadImage = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: ;
+  bottom: 00;
+  left: 0;
+  overflow: hidden;
+  background: white;
+  z-index: 20;
+  display: block;
+  text-align: center;
+
+  & > img {
+    margin-top: 150px;
+  }
+`
+
+export const Main = styled.main`
+  -webkit-animation: fadeIn 3s ease-in-out;
+  -moz-animation: fadeIn 3s ease-in-out;
+  -o-animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
+
+
+  @-webkit-keyframes fadeIn {
+    100% { opacity: 1; }
+    0% { opacity: 0; }
+  }
+  @-moz-keyframes fadeIn {
+    100% { opacity: 1; }
+    0% { opacity: 0;}
+  }
+  @-o-keyframes fadeIn {
+    100% { opacity: 1; }
+    0% { opacity: 0; }
+  }
+  @keyframes fadeIn {
+    100% { opacity: 1; }
+    0% { opacity: 0; }
+  }
+`
