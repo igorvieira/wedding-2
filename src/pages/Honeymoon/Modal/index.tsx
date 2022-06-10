@@ -49,20 +49,11 @@ const PaymentModal = ({ isModalOpen, closeModal, description: item }: PaymentMod
       <S.ModalWrapper>
         <S.Title>Tranferência via Pix</S.Title>
         <S.ContentBanner>
-          <img
-            style={{
-              width: '100%',
-              height: 250
-            }}
-            src={item.url}
+          <S.ImageQRCode
+            src={buildUrl(item.url, {})}
             alt={item.alt}
           />
-
-          <img
-            style={{
-              width: '100%',
-              height: 250
-            }}
+          <S.ImageBanner
             src={buildUrl(item.banner, {})}
             alt={item.alt}
           />

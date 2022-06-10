@@ -46,7 +46,8 @@ const HoneymoonTemplate = () => {
 
         {
           mock?.map((item, index) => {
-            const src = buildUrl(item.banner, {})
+            const banner = buildUrl(item.banner, {})
+            const qrcode = buildUrl(item.url, {})
             return (
               <S.CardItem key={index} onClick={() => {
                 setDescription(item)
@@ -54,7 +55,8 @@ const HoneymoonTemplate = () => {
               }}>
                 <Card
                   text={item.text}
-                  banner={src}
+                  url={qrcode}
+                  banner={banner}
                   description={item.description}
                 />
               </S.CardItem>

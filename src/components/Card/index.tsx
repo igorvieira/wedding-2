@@ -4,6 +4,7 @@ export type CardProps = {
   banner: string
   description: string
   text: string
+  url: string
 }
 
 

@@ -208,3 +208,12 @@ export const ModalWrapper = styled.article`
 export const Text = styled.div`
     font-size: 1rem;
 `
+
+export const ImageQRCode = styled.img`
+  width: 100%;
+  height: 250px;
+`
+export const ImageBanner = styled.img`
+  width: 100%;
+  height: 250px;
+`
