@@ -20,8 +20,9 @@ export const Box = styled.div`
   overflow: hidden;
   transition: .7s;
   margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  box-shadow: none;
   line-height: 0;
+
 
   & > img {
     width: 100%;
@@ -32,6 +33,7 @@ export const Box = styled.div`
 
   ${
     media.greaterThan('small')`
+      box-shadow: 0 20px 30px rgba(0,0,0,.1);
       flex-flow: row wrap;
 
       & > img {
