@@ -27,7 +27,7 @@ root.render(
         <Route index element={<Home />} />
         <Route path="gift-list-shop" element={<GiftListShop />} />
         <Route path="ceremony" element={<Ceremony />} />
-        <Route path="ceremony-on-line" element={<OnLineCeremony />} />
+        <Route path="online-ceremony" element={<OnLineCeremony />} />
         <Route path="to-the-bride-and-groom" element={<ToTheBrideAndGroom />} />
         <Route path="our-story" element={<OurStory />} />
         <Route path="honeymoon" element={<Honeymoon />} />
