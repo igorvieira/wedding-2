@@ -27,6 +27,9 @@ const Navbar = () => {
               <Link to="/ceremony">
                 <S.SubA>Cerimônia religiosa</S.SubA>
               </Link>
+              <Link to="/ceremony-on-line">
+                <S.SubA>Cerimônia On-Line</S.SubA>
+              </Link>
             </S.DropDownContent>
 
           </S.DropDownLi>

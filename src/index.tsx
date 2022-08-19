@@ -13,6 +13,7 @@ import Honeymoon from "./pages/Honeymoon";
 import App from './App';
 import GlobalStyles from './styles/global';
 import reportWebVitals from './reportWebVitals';
+import OnLineCeremony from './pages/OnLineCeremony';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -26,6 +27,7 @@ root.render(
         <Route index element={<Home />} />
         <Route path="gift-list-shop" element={<GiftListShop />} />
         <Route path="ceremony" element={<Ceremony />} />
+        <Route path="ceremony-on-line" element={<OnLineCeremony />} />
         <Route path="to-the-bride-and-groom" element={<ToTheBrideAndGroom />} />
         <Route path="our-story" element={<OurStory />} />
         <Route path="honeymoon" element={<Honeymoon />} />
