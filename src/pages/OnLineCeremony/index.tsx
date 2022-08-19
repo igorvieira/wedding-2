@@ -36,7 +36,7 @@ const OnLineCeremony = () => {
       <div>
         <S.Description>
         <iframe width="100%"
-          height="315"
+          height="500"
           src="https://www.youtube.com/embed/9jJqEHV6yiY"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
