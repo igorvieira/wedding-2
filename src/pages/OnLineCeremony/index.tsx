@@ -1,12 +1,16 @@
-import buildUrl, { setConfig } from 'cloudinary-build-url';
-import { useState } from 'react';
-import Card from '../../components/Card';
-import Content from '../../components/Content';
-import mock from './mock';
-import PaymentModal, { DescriptionProps } from './Modal';
-import * as S from './styles'
+import buildUrl, { setConfig } from "cloudinary-build-url"
+import { useState } from "react"
+import Card from "../../components/Card"
+import { Content } from "../../components/Content/styled"
+import PaymentModal, { DescriptionProps } from "../Honeymoon/Modal"
+import mock from "./mock"
+import * as S from "./styles"
 
-const HoneymoonTemplate = () => {
+setConfig({
+  cloudName: 'dje6m1lab'
+})
+
+const OnLineCeremony = () => {
 
   const DESCRIPTION_INITIAL_STATE = {
     url: '',
@@ -21,34 +25,31 @@ const HoneymoonTemplate = () => {
   const [description, setDescription] = useState<DescriptionProps>(DESCRIPTION_INITIAL_STATE)
 
 
+
   const closeModal = () => setIsModalOpen(false)
   const openModal = () => setIsModalOpen(true)
 
 
-  const OUR_HISTORY = '039_Bruna_Igor_28042022_1_oikt39.jpg'
-
-    setConfig({
-      cloudName: 'dje6m1lab'
-    })
-
-  return <div>
+  return (
+    <div>
     <Content>
-      <S.ImageCover
-        src={buildUrl(OUR_HISTORY, {
-          transformations: {
-            resize: {
-              width: '1080',
-              type: 'scale'
-            }
-          }})}
-        alt="background"
-      />
-      <S.Title>Cotas</S.Title>
-      <hr />
-      <S.HoneymoonSubtitle>
-        Você pode está contribuindo para a nossa Lua de Mel através de QRCode ou Copiando e colando o link abaixo.
-      </S.HoneymoonSubtitle>
-      <S.HoneymoonContent>
+      <div>
+        <S.Description>
+        <iframe width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/9jJqEHV6yiY"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        >
+
+          </iframe>
+        </S.Description>
+      </div>
+      <S.TitleHistory>Cerimônia Online</S.TitleHistory>
+      <S.OnLineSubtitle>
+        Você pode está contribuindo para a nossa Lua de Mel através de QRCode ou Copiando e colando o link abaixo. Por favor, aprecie e esteja participando conosco. =]
+      </S.OnLineSubtitle>
+      <S.OnLineContent>
         {
           mock?.map((item, index) => {
             const banner = buildUrl(item.banner, {
@@ -82,7 +83,7 @@ const HoneymoonTemplate = () => {
           })
         }
 
-      </S.HoneymoonContent>
+      </S.OnLineContent>
 
       <PaymentModal
         isModalOpen={isModalOpen}
@@ -94,6 +95,7 @@ const HoneymoonTemplate = () => {
       />
     </Content>
   </div>
+  )
 }
 
-export default HoneymoonTemplate
+export default OnLineCeremony
