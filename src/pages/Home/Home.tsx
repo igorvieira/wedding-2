@@ -1,4 +1,3 @@
-import CounterDown from "../../components/CounterDown";
 import Gallery from "../../components/Gallery";
 import Hero from "../../components/Hero";
 import mock from "./mock";
